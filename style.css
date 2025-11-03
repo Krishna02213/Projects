@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #72a4d4, #4a75a7); /* A nice blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.weather-app {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #4a75a7;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Search Box Styling */
+.search-box {
+    margin-bottom: 25px;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#city-input {
+    padding: 12px;
+    border: none;
+    flex-grow: 1;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-button {
+    padding: 12px 18px;
+    background-color: #4a75a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #385a7e;
+}
+
+/* Weather Info Display */
+.weather-info {
+    margin-top: 30px;
+}
+
+#location {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 15px 0;
+}
+
+#temperature {
+    font-size: 4em;
+    font-weight: bold;
+    color: #e74c3c; /* Red color for temperature */
+    margin: 0;
+}
+
+#condition {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
